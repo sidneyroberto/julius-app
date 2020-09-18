@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+@font-face {
+    font-family: "negrito";
+    src: url(../fonts/KumbhSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/KumbhSans-Regular.ttf);
+}
+
+:root {
+    --cor-destaque: #5333ed;
+}
+
+/* MARCA */
+#marca {
+    background-color: white;
+    padding: 10px;
+}
+
+#marca * {
+    vertical-align: middle;
+}
+
+#marca img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+#marca span {
+    font-family: "negrito";
+    font-size: 150%;
+    color: var(--cor-destaque);
+}
+
+/* HEADER */
+
+#header {
+    background-image: linear-gradient(to right, #4d13d1, #59abe3);
+    padding: 50px 10px 30px 30px;
+    color: white;
+}
+
+#boasVindas {
+    font-family: "negrito";
+    font-size: 500%;
+    display: block;
+}
+
+#slogan {
+    font-family: "padrao";
+    font-size: 200%;
+}
+
+/* CONTAINER*/
+
+#container {
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* SEÇÃO DA ESQUERDA */
+#esquerda {
+    width: 60%;
+    padding: 10px;
+}
+
+#lancamentos {
+    font-family: "negrito";
+    font-size: 200%;
+}
+
+#novoLancamento {
+    float: right;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#areaLancamentos {
+    margin-top: 30px;
+}
+
+.blocoLancamento {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.blocoLancamento img {
+    width: 50px;
+}
+
+.descricaoLancamento {
+    float: right;
+    text-align: right;
+}
+
+.descricaoLancamento span {
+    display: block;
+    font-family: "padrao";
+}
+
+.valor {
+    font-family: "negrito" !important;
+    font-size: 200%;
+}
+
+.gasto {
+    color: red;
+}
+
+.entrada {
+    color: #22a7f0;
+}
+
+/* SEÇÃO DA DIREITA */
+
+#direita {
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 30px;
+    text-align: right;
+    font-family: "negrito";
+}
+
+#direita img {
+    width: 30px;
+}
+
+#labelRenda {
+    font-size: 250%;
+    display: block;
+}
+
+#renda {
+    font-size: 500%;
+    color: var(--cor-destaque);
+}
