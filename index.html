@@ -24,49 +24,35 @@
     <div id="container">
 
         <div id="esquerda">
-            <span id="lancamentos">Seus lançamentos</span>
-            <button id="novoLancamento">Novo lançamento</button>
+            <span id="lancamentos">Nenhum lançamento cadastrado</span>
+            <button id="novoLancamento" onclick="alternarFormulario()">
+                Novo lançamento
+            </button>
+
+            <div id="formularioLancamento">
+                <form>
+                    <label for="valor">Valor:</label>
+                    <input type="number" name="valor" id="valor">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" name="descricao" id="descricao">
+                    <label for="dataLancamento">Data do lançamento:</label>
+                    <input type="date" name="dataLancamento" id="dataLancamento">
+                    <button id="botaoLancar">Lançar</button>
+                </form>
+            </div>
 
             <div id="areaLancamentos">
-                <div class="blocoLancamento">
-                    <img src="img/menos.png" alt="Gasto">
 
-                    <div class="descricaoLancamento">
-                        <span class="valor gasto">R$ 35.97</span>
-                        <span>15/09/2020</span>
-                        <span>Padaria Villas Boas</span>
-                    </div>
-                </div>
-
-                <div class="blocoLancamento">
-                    <img src="img/menos.png" alt="Gasto">
-
-                    <div class="descricaoLancamento">
-                        <span class="valor gasto">R$ 15.50</span>
-                        <span>14/09/2020</span>
-                        <span>Conveniência do João</span>
-                    </div>
-                </div>
-
-                <div class="blocoLancamento">
-                    <img src="img/mais.png" alt="Entrada">
-
-                    <div class="descricaoLancamento">
-                        <span class="valor entrada">R$ 50.00</span>
-                        <span>12/09/2020</span>
-                        <span>Venda de bijuteria</span>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div id="direita">
-            <span id="labelRenda">Sua renda mensal</span>
-            <img src="img/editar.png" alt="Alterar a renda mensal">
-            <span id="renda">R$ 3.000</span>
+            <span id="labelRenda">Dinheiro em caixa</span>
+            <span id="renda">0</span>
         </div>
     </div>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
