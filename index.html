@@ -30,13 +30,13 @@
             </button>
 
             <div id="formularioLancamento">
-                <form>
+                <form onsubmit="lancar(event)">
                     <label for="valor">Valor:</label>
-                    <input type="number" name="valor" id="valor">
+                    <input type="number" step="0.01" name="valor" id="valor" required>
                     <label for="descricao">Descrição:</label>
-                    <input type="text" name="descricao" id="descricao">
+                    <input type="text" name="descricao" id="descricao" required>
                     <label for="dataLancamento">Data do lançamento:</label>
-                    <input type="date" name="dataLancamento" id="dataLancamento">
+                    <input type="date" name="dataLancamento" id="dataLancamento" required>
                     <button id="botaoLancar">Lançar</button>
                 </form>
             </div>
@@ -48,7 +48,7 @@
 
         <div id="direita">
             <span id="labelRenda">Dinheiro em caixa</span>
-            <span id="renda">0</span>
+            <span id="renda">R$ 0</span>
         </div>
     </div>
 
