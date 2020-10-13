@@ -109,6 +109,23 @@ body {
     padding-left: 10px;
 }
 
+#botaoTipoLancamento {
+    margin: 5px 0px 20px 0px;
+}
+
+#botaoTipoLancamento input {
+    margin: 0px 0px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#botaoTipoLancamento label {
+    vertical-align: middle;
+    padding-right: 10px;
+    font-family: "negrito";
+    font-size: 120%;
+}
+
 #descricao {
     width: 70%;
 }
@@ -184,4 +201,10 @@ body {
 
 #renda {
     font-size: 500%;
+}
+
+/* GRÁFICO DE COMPORTAMENTO DE DINHEIRO */
+
+#graficoLancamentos {
+    width: 90%;
 }
