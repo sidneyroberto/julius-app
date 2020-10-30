@@ -89,6 +89,10 @@ body {
     outline: none;
 }
 
+#novoLancamentoMobile {
+    display: none;
+}
+
 #formularioLancamento {
     display: none;
     margin-top: 40px;
@@ -150,15 +154,24 @@ body {
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 10px;
+    display: flex;
 }
 
-.blocoLancamento img {
+.blocoLancamento * {
+    vertical-align: middle;
+}
+
+.botoes {
+    width: 50%;
+}
+
+.imagemLancamento {
     width: 50px;
 }
 
 .descricaoLancamento {
-    float: right;
     text-align: right;
+    width: 50%;
 }
 
 .descricaoLancamento span {
@@ -179,6 +192,24 @@ body {
     color: #22a7f0;
 }
 
+.botaoRemover {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.botaoRemover:hover {
+    cursor: pointer;
+}
+
+.botaoRemover img {
+    width: 45px;
+}
+
+.botaoRemover:active img {
+    filter: invert(100%);
+}
+
 /* SEÇÃO DA DIREITA */
 
 #direita {
@@ -188,10 +219,6 @@ body {
     padding: 30px;
     text-align: right;
     font-family: "negrito";
-}
-
-#direita img {
-    width: 30px;
 }
 
 #labelRenda {
@@ -207,4 +234,99 @@ body {
 
 #graficoLancamentos {
     width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        padding: 30px 10px 20px 10px;
+        text-align: center;
+    }
+
+    #boasVindas {
+        font-size: 250%;
+    }
+
+    #slogan {
+        font-size: 100%;
+    }
+
+    #container {
+        display: block;
+        margin: 0;
+    }
+
+    #esquerda,
+    #direita {
+        width: 95%;
+        padding: 20px 0px;
+        margin: 0px auto;
+    }
+
+    #novoLancamento {
+        display: none;
+    }
+
+    #lancamentos {
+        display: none;
+    }
+
+    #novoLancamentoMobile {
+        display: block;
+        text-align: center;
+    }
+
+    #novoLancamentoMobile button {
+        border: none;
+        background-color: var(--cor-destaque);
+        color: white;
+        font-size: 300%;
+        padding: 7px 20px;
+        border-radius: 5px;
+        outline: none;
+        font-family: "negrito";
+    }
+
+    #direita {
+        text-align: center;
+    }
+
+    #labelRenda {
+        font-size: 150%;
+    }
+
+    #renda {
+        font-size: 200%;
+    }
+
+    #graficoLancamentos {
+        width: 100%;
+    }
+
+    .blocoLancamento {
+        padding: 10px;
+    }
+
+    .imagemLancamento {
+        width: 30px;
+    }
+
+    .botaoRemover img {
+        width: 35px;
+    }
+
+    .botoes {
+        width: 40%;
+    }
+
+    .descricaoLancamento {
+        width: 60%;
+    }
+
+    .descricaoLancamento span {
+        font-size: 90%;
+    }
+
+    .valor {
+        font-size: 150% !important;
+    }
 }
