@@ -286,6 +286,22 @@ body {
         font-family: "negrito";
     }
 
+    #formularioLancamento {
+        text-align: center;
+    }
+
+    #formularioLancamento input {
+        width: 90%;
+    }
+
+    #formularioLancamento input[type=radio] {
+        width: 7%;
+    }
+
+    #botaoTipoLancamento {
+        font-size: 90%;
+    }
+
     #direita {
         text-align: center;
     }
